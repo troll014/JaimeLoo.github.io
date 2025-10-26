@@ -1,0 +1,227 @@
+/* Futuristic Creative CV Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 50px;
+    position: relative;
+    border-bottom: 2px solid #00ffff;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; }
+    to { text-shadow: 0 0 30px #00ffff, 0 0 50px #00ffff, 0 0 70px #00ffff; }
+}
+
+.contact-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #00ffff;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+}
+
+.contact-item i {
+    margin-right: 8px;
+    color: #ff00ff;
+    font-size: 1.2em;
+}
+
+.contact-item span {
+    font-size: 0.9em;
+    color: #e0e0e0;
+}
+
+section {
+    margin-bottom: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+    animation: rotate 20s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #00ffff;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+p {
+    margin: 0 0 15px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skills-list li {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #0f0f23;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.experience-item, .education-item, .course-item {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.experience-item h3, .education-item h3, .course-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #ff00ff;
+}
+
+.company, .institution {
+    font-style: italic;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .header-content h1 {
+        font-size: 2.2em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list li {
+        width: fit-content;
+    }
+}
