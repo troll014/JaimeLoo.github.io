@@ -8,6 +8,11 @@ body {
     color: #333333;
     line-height: 1.6;
     font-size: 14px;
+    transition: filter 0.3s ease;
+}
+
+body.bw {
+    filter: grayscale(100%);
 }
 
 .container {
