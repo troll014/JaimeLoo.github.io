@@ -45,6 +45,11 @@ Edita `index.html` para actualizar tu información personal, experiencia, educac
 - Font Awesome para íconos
 - Google Fonts (Roboto)
 
+## Notas Adicionales
+
+- Añade tu foto de perfil como `profile.jpg` en la raíz del proyecto para que aparezca en el header.
+- Para contenedores Docker, no es necesario para un sitio estático alojado en GitHub Pages, ya que Pages maneja el hosting directamente desde el repositorio.
+
 ## Vista Previa Local
 
 Para ver el sitio localmente, abre `index.html` en tu navegador web.
