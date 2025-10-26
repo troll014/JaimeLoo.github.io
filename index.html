@@ -16,6 +16,25 @@
                 body.classList.toggle('dark');
                 toggleBtn.textContent = body.classList.contains('dark') ? 'Toggle Light' : 'Toggle Dark';
             });
+
+            // Modal functionality
+            const modal = document.getElementById('certificates-modal');
+            const btn = document.getElementById('view-certificates');
+            const span = document.getElementsByClassName('close')[0];
+
+            btn.onclick = function() {
+                modal.style.display = 'block';
+            }
+
+            span.onclick = function() {
+                modal.style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
         });
     </script>
 </head>
@@ -119,8 +138,25 @@
             </div>
         </section>
 
+        <section id="proyectos">
+            <h2>PROYECTOS</h2>
+            <div class="project-item">
+                <h3>Prototipos Robóticos con Tecnología Biónica</h3>
+                <p>Desarrollo de prototipos robóticos utilizando sensores mioeléctricos y Arduino. Integración de sistemas electrónicos y mecánicos para aplicaciones innovadoras en biónica.</p>
+            </div>
+            <div class="project-item">
+                <h3>Aplicaciones Móviles con Android Studio</h3>
+                <p>Creación de aplicaciones móviles utilizando Android Studio, enfocándome en interfaces de usuario intuitivas y funcionalidades avanzadas.</p>
+            </div>
+            <div class="project-item">
+                <h3>Soluciones de Software Empresarial</h3>
+                <p>Desarrollo e implementación de soluciones de software para optimizar procesos empresariales, incluyendo análisis de sistemas y gestión de proyectos tecnológicos.</p>
+            </div>
+        </section>
+
         <section id="cursos">
             <h2>CURSOS Y CERTIFICADOS</h2>
+            <button id="view-certificates" class="view-btn">Ver Todos los Certificados</button>
             <div class="course-item">
                 <h3>INGLÉS</h3>
                 <p class="institution">Princeton Academy . Panama | Ene 2018 - 2023</p>
@@ -131,6 +167,27 @@
                 <p>Administrador Amazon Web Server, Android Studio, JavaScript, SQL, C, C++, C#, GitHub, Señales con sensores mioeléctrico usando Arduino. También estoy aprendiendo semiconductores en Coursera como autodidacta y mirando tutoriales en YouTube.</p>
             </div>
         </section>
+
+        <!-- Modal for Certificates -->
+        <div id="certificates-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Todos los Certificados</h2>
+                <ul>
+                    <li><strong>Inglés - Princeton Academy (2018-2023):</strong> Desarrollo de habilidades en comprensión y comunicación en inglés.</li>
+                    <li><strong>Administrador Amazon Web Server:</strong> Gestión y administración de servidores en la nube de AWS.</li>
+                    <li><strong>Android Studio:</strong> Desarrollo de aplicaciones móviles para Android.</li>
+                    <li><strong>JavaScript:</strong> Programación en JavaScript para desarrollo web.</li>
+                    <li><strong>SQL:</strong> Manejo de bases de datos relacionales.</li>
+                    <li><strong>C, C++, C#:</strong> Programación en lenguajes de bajo y alto nivel.</li>
+                    <li><strong>GitHub:</strong> Control de versiones y colaboración en proyectos.</li>
+                    <li><strong>Señales con sensores mioeléctrico usando Arduino:</strong> Integración de sensores y microcontroladores.</li>
+                    <li><strong>Semiconductores en Coursera:</strong> Aprendizaje autodidacta sobre semiconductores.</li>
+                    <li><strong>Androide Biónico - P4Hbionics (2024):</strong> Diseño y construcción de prototipos robóticos.</li>
+                    <li><strong>Inglés - EF Education First (2024-2025):</strong> Desarrollo avanzado de habilidades en inglés.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
