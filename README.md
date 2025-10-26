@@ -47,8 +47,8 @@ Edita `index.html` para actualizar tu información personal, experiencia, educac
 
 ## Notas Adicionales
 
-- Añade tu foto de perfil como `profile.jpg` en la raíz del proyecto para que aparezca en el header.
-- Para contenedores Docker, no es necesario para un sitio estático alojado en GitHub Pages, ya que Pages maneja el hosting directamente desde el repositorio.
+- La foto de perfil ya está incluida como `1760334031461.png` en el proyecto.
+- Para contenedores Docker, no es necesario para un sitio estático alojado en GitHub Pages, ya que Pages maneja el hosting directamente desde el repositorio sin necesidad de contenedores.
 
 ## Vista Previa Local
 
