@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Inglés - Princeton Academy (2018-2023)",
+    "image": "certificates/ingles-princeton.jpg",
+    "description": "Desarrollo de habilidades en comprensión y comunicación en inglés."
+  },
+  {
+    "name": "Administrador Amazon Web Server",
+    "image": "certificates/aws-admin.jpg",
+    "description": "Gestión y administración de servidores en la nube de AWS."
+  },
+  {
+    "name": "Android Studio",
+    "image": "certificates/android-studio.jpg",
+    "description": "Desarrollo de aplicaciones móviles para Android."
+  },
+  {
+    "name": "JavaScript",
+    "image": "certificates/javascript.jpg",
+    "description": "Programación en JavaScript para desarrollo web."
+  },
+  {
+    "name": "SQL",
+    "image": "certificates/sql.jpg",
+    "description": "Manejo de bases de datos relacionales."
+  },
+  {
+    "name": "C, C++, C#",
+    "image": "certificates/c-cpp-csharp.jpg",
+    "description": "Programación en lenguajes de bajo y alto nivel."
+  },
+  {
+    "name": "GitHub",
+    "image": "certificates/github.jpg",
+    "description": "Control de versiones y colaboración en proyectos."
+  },
+  {
+    "name": "Señales con sensores mioeléctrico usando Arduino",
+    "image": "certificates/arduino-sensores.jpg",
+    "description": "Integración de sensores y microcontroladores."
+  },
+  {
+    "name": "Semiconductores en Coursera",
+    "image": "certificates/semiconductores-coursera.jpg",
+    "description": "Aprendizaje autodidacta sobre semiconductores."
+  },
+  {
+    "name": "Androide Biónico - P4Hbionics (2024)",
+    "image": "certificates/androide-bionico.jpg",
+    "description": "Diseño y construcción de prototipos robóticos."
+  },
+  {
+    "name": "Inglés - EF Education First (2024-2025)",
+    "image": "certificates/ingles-ef.jpg",
+    "description": "Desarrollo avanzado de habilidades en inglés."
+  }
+]
